@@ -1,0 +1,26 @@
+---
+title: Testimonials
+navOrder: 2
+---
+
+<h1>
+  Testimonials
+</h1>
+
+{% for testimonial in site.data.testimonials %}
+  <div class='row'>
+    <div class='column'>
+      <figure>
+        <blockquote>
+          {{ testimonial.quote }}
+        </blockquote>
+        <figcaption>
+          {{ testimonial.author }}
+        </figcaption>
+      </figure>
+    </div>
+    <div class='column size40'>
+      <img src='/assets/images/testimonials/{{ testimonial.author | downcase }}.jpg' />
+    </div>
+  </div>
+{% endfor %}

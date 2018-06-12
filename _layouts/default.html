@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+
+    {% include header.html %}
+
+    <div class='{{ page.url | replace: "/","" }} page-content'>
+      {% if page.title %}
+        <div class='page-heading'>
+          <h1>
+            {{ page.title }}
+          </h1>
+        </div>
+      {% else %}
+        <div class='page-heading home'>
+          <h1>
+            Just go away!
+          </h1>
+          <a href='/contact'>
+            Contact Us for an Experience!
+          </a>
+        </div>
+      {% endif %}
+
+      <div class='wrapper'>
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>

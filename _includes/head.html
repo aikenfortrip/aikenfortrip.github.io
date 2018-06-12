@@ -1,0 +1,35 @@
+<head>
+  {% include title.html %}
+
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <meta name='revisit-after' content='2 days'>
+
+  <meta
+    name='description'
+    content='
+      {% if page.excerpt %}
+        {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
+    '
+  />
+
+  <meta name='keywords' content='mindy aiken, aiken for a trip, vacation, honeymoons, luxury travel, domestic, international'>
+
+  <link rel='stylesheet' href='/css/grid.css'>
+  <link rel='stylesheet' href='/css/main.css'>
+
+  <link
+    rel='canonical'
+    href='{{ page.url | replace:'index.html','' | prepend: site.url }}'
+  />
+  <link
+    rel='alternate'
+    type='application/rss+xml'
+    title='{{ site.title }}'
+    href='{{ '/feed.xml' | prepend: site.url }}'
+  />
+</head>

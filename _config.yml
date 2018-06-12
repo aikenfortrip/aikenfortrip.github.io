@@ -1,0 +1,21 @@
+# Site settings
+title: Aiken for a Trip - Mindy Aiken
+email: aiken737@gmail.com
+
+description: >
+  Aiken For A Trip is a boutique company that delivers unique domestic and international travel. Specializing in honeymoons, multi-generational trips and luxury travel. All travel itineraries are scrutinized to ensure our clients have the best personalized experiences!
+
+url: 'http://aikenfortrip.com'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections_dir: collections
+
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'default'
