@@ -52,5 +52,12 @@
     background-color: $green;
     color: hsl(0, 100%, 100%);
     font-size: 1.8rem;
+    transition: box-shadow .3s, text-decoration .3s, transform .3s;
+
+    &:hover {
+      box-shadow: 6px 6px 6px $black;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 }
