@@ -3,22 +3,24 @@ title: Testimonials
 navOrder: 2
 ---
 
-{% for testimonial in site.data.testimonials %}
+<div class='wrapper'>
+  {% for testimonial in site.data.testimonials %}
 
-  <div class='row'>
-    <div class='column'>
-      <figure>
-        <blockquote>
-          {{ testimonial.quote }}
-        </blockquote>
-        <figcaption>
-          {{ testimonial.author }}
-        </figcaption>
-      </figure>
+    <div class='row'>
+      <div class='column'>
+        <figure>
+          <blockquote>
+            {{ testimonial.quote }}
+          </blockquote>
+          <figcaption>
+            {{ testimonial.author }}
+          </figcaption>
+        </figure>
+      </div>
+      <div class='column size40'>
+        <img src='/assets/images/testimonials/{{ testimonial.author | downcase }}.jpg' />
+      </div>
     </div>
-    <div class='column size40'>
-      <img src='/assets/images/testimonials/{{ testimonial.author | downcase }}.jpg' />
-    </div>
-  </div>
 
-{% endfor %}
+  {% endfor %}
+</div>

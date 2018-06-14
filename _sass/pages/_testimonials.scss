@@ -1,10 +1,14 @@
 .testimonials {
-  .row {
-    width: calc(100% - 6rem);
-    padding: 0 3rem;
+  figure {
+    margin-bottom: 0;
   }
 
-  .row:nth-of-type(odd) {
+  .row {
+    width: calc(100% - 6rem);
+    padding: 1rem 3rem;
+  }
+
+  .row:nth-of-type(even) {
     flex-direction: row-reverse;
     background-color: $green;
 
@@ -13,11 +17,11 @@
     }
   }
 
-  .row:nth-of-type(even) .column:first-of-type {
+  .row:nth-of-type(odd) .column:first-of-type {
     margin-right: 10%;
   }
 
-  .row:nth-of-type(odd) .column:last-of-type {
+  .row:nth-of-type(even) .column:last-of-type {
     margin-right: 10%;
   }
 
