@@ -3,27 +3,22 @@ title: Testimonials
 navOrder: 2
 ---
 
-<!-- <div class='wrapper'> -->
+{% for testimonial in site.data.testimonials %}
 
-  {% for testimonial in site.data.testimonials %}
-    {% assign mod2 = forloop.index | modulo: 2 %}
-
-    <div class='row'>
-      <div class='column'>
-        <figure>
-          <blockquote>
-            {{ testimonial.quote }}
-          </blockquote>
-          <figcaption>
-            {{ testimonial.author }}
-          </figcaption>
-        </figure>
-      </div>
-      <div class='column size40'>
-        <img src='/assets/images/testimonials/{{ testimonial.author | downcase }}.jpg' />
-      </div>
+  <div class='row'>
+    <div class='column'>
+      <figure>
+        <blockquote>
+          {{ testimonial.quote }}
+        </blockquote>
+        <figcaption>
+          {{ testimonial.author }}
+        </figcaption>
+      </figure>
     </div>
+    <div class='column size40'>
+      <img src='/assets/images/testimonials/{{ testimonial.author | downcase }}.jpg' />
+    </div>
+  </div>
 
-  {% endfor %}
-
-<!-- </div> -->
+{% endfor %}

@@ -1,24 +1,36 @@
 .before-you-go {
-  .wrapper > p {
+  p.first {
+    width: calc(100% - 6rem);
+    padding: 0 3rem;
     margin-bottom: 3rem;
   }
 
-  .row:nth-of-type(even) {
-    flex-direction: row-reverse;
+  .row {
+    width: calc(100% - 6rem);
+    padding: 0 3rem;
   }
 
-  .row:nth-of-type(odd) .column:first-of-type {
+  .row:nth-of-type(odd) {
+    flex-direction: row-reverse;
+    background-color: $green;
+
+    h2, p {
+      color: $white;
+    }
+  }
+
+  .row:nth-of-type(even) .column:first-of-type {
     margin-right: 10%;
   }
 
-  .row:nth-of-type(even) .column:last-of-type {
+  .row:nth-of-type(odd) .column:last-of-type {
     margin-right: 10%;
   }
 
   @include media-query($on-palm) {
     .row, .row:nth-of-type(even), .row:nth-of-type(odd) {
       flex-direction: column;
-      margin-bottom: 3rem;
+      margin-bottom: 0;
 
       .column:first-of-type, .column:last-of-type {
         margin-right: 0;
