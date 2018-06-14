@@ -1,3 +1,15 @@
+.contact {
+  @include media-query($on-palm) {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .contact-form {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
 .contact-info {
   p {
     margin-bottom: 0;
@@ -25,6 +37,7 @@
   input, textarea {
     width: calc(100% - 2rem);
     padding: 1rem;
+    border: 1px solid $green;
   }
 
   textarea {

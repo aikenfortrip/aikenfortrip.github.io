@@ -13,5 +13,9 @@
     font-size: 6rem;
     text-align: center;
     transform: rotateZ(-15deg);
+
+    @include media-query($on-palm) {
+      transform: none;
+    }
   }
 }

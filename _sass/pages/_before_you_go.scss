@@ -14,4 +14,19 @@
   .row:nth-of-type(even) .column:last-of-type {
     margin-right: 10%;
   }
+
+  @include media-query($on-palm) {
+    .row, .row:nth-of-type(even), .row:nth-of-type(odd) {
+      flex-direction: column;
+      margin-bottom: 3rem;
+
+      .column:first-of-type, .column:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    h2 {
+      margin-bottom: .5rem;
+    }
+  }
 }
