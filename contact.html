@@ -3,70 +3,74 @@ title: Contact
 navOrder: 1
 ---
 
-<div class='row'>
-  <div class='contact-info column'>
-    <div class='tel-email'>
-      <h2>
-        Call or Email
-      </h2>
-      <p class='telephone'>
-        <a href='tel:1-410-935-3444'>
-          (410) 935-3444
-        </a>
-      </p>
-      <p class='email'>
-        <a href='mailto:aiken737@gmail.com'>
-          aiken737@gmail.com
-        </a>
-      </p>
+<div class='wrapper'>
+
+  <div class='row'>
+    <div class='contact-info column'>
+      <div class='tel-email'>
+        <h2>
+          Call or Email
+        </h2>
+        <p class='telephone'>
+          <a href='tel:1-410-935-3444'>
+            (410) 935-3444
+          </a>
+        </p>
+        <p class='email'>
+          <a href='mailto:aiken737@gmail.com'>
+            aiken737@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class='social'>
+        <h2>
+          Connect with Us
+        </h2>
+        <p>
+          <a href='https://www.facebook.com/aikenforatrip/'>
+            <span class='icon'>
+              <svg>
+                <use xlink:href='/assets/icons.svg#facebook' />
+              </svg>
+            </span>
+            <span class='username'>
+              Facebook
+            </span>
+          </a>
+        </p>
+      </div>
     </div>
 
-    <div class='social'>
+    <div class='contact-form column'>
       <h2>
-        Connect with Us
+        Send us a Message
       </h2>
-      <p>
-        <a href='https://www.facebook.com/aikenforatrip/'>
-          <span class='icon'>
-            <svg>
-              <use xlink:href='/assets/icons.svg#facebook' />
-            </svg>
-          </span>
-          <span class='username'>
-            Facebook
-          </span>
-        </a>
-      </p>
+      <form>
+        <fieldset class='name'>
+          <label for='form-name'>
+            Name
+          </label>
+          <input id='form-name' name='name' type='text' />
+        </fieldset>
+        <fieldset class='email'>
+          <label for='form-email'>
+            Email
+          </label>
+          <input id='form-email' name='email' type='email' />
+        </fieldset>
+        <fieldset class='comments'>
+          <label for='form-comments'>
+            Comments
+          </label>
+          <textarea id='form-comments' name='comments'>
+          </textarea>
+        </fieldset>
+        <button type='submit'>
+          Contact Us
+        </button>
+      </form>
     </div>
   </div>
-
-  <div class='contact-form column'>
-    <h2>
-      Send us a Message
-    </h2>
-    <form>
-      <fieldset class='name'>
-        <label for='form-name'>
-          Name
-        </label>
-        <input id='form-name' name='name' type='text' />
-      </fieldset>
-      <fieldset class='email'>
-        <label for='form-email'>
-          Email
-        </label>
-        <input id='form-email' name='email' type='email' />
-      </fieldset>
-      <fieldset class='comments'>
-        <label for='form-comments'>
-          Comments
-        </label>
-        <textarea id='form-comments' name='comments'>
-        </textarea>
-      </fieldset>
-      <button type='submit'>
-        Contact Us
-      </button>
-    </form>
-  </div>
+  
 </div>

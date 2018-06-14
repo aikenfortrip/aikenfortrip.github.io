@@ -12,20 +12,9 @@
             {{ page.title }}
           </h1>
         </div>
-      {% else %}
-        <div class='page-heading home'>
-          <h1>
-            Just go away!
-          </h1>
-          <a href='/contact'>
-            Contact Us for an Experience!
-          </a>
-        </div>
       {% endif %}
 
-      <div class='wrapper'>
-        {{ content }}
-      </div>
+      {{ content }}
     </div>
 
     {% include footer.html %}
