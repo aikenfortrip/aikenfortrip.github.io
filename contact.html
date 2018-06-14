@@ -46,18 +46,21 @@ navOrder: 1
       <h2>
         Send us a Message
       </h2>
-      <form>
+      <form action='https://formspree.io/aiken737@gmail.com' method='POST'>
+        <input id='form-subject' type='hidden' name='_subject' value='New submission!' />
+        <input id='form-next' type='hidden' name='_next' value='{{ site.url }}/contact-thank-you' />
+        <input id='form-gotcha' type='text' name='_gotcha' style='display:none' />
         <fieldset class='name'>
           <label for='form-name'>
             Name
           </label>
-          <input id='form-name' name='name' type='text' />
+          <input id='form-name' name='name' type='text' required />
         </fieldset>
         <fieldset class='email'>
           <label for='form-email'>
             Email
           </label>
-          <input id='form-email' name='email' type='email' />
+          <input id='form-email' name='email' type='email' required />
         </fieldset>
         <fieldset class='comments'>
           <label for='form-comments'>
@@ -73,3 +76,13 @@ navOrder: 1
   </div>
 
 </div>
+
+<script>
+const subjectInput = document.getElementById('form-subject');
+const nameInput = document.getElementById('form-name');
+
+nameInput.onchange = function () {
+  const dateString = (new Date()).toGMTString();
+  subjectInput.value = 'New submission from ' + nameInput.value + ' on ' + dateString;
+}
+</script>
