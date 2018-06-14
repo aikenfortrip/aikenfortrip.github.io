@@ -8,34 +8,14 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
+.contact-list {
   list-style: none;
   margin-left: 0;
-}
-
-.footer-col-wrapper {
-  font-size: 15px;
   color: $grey-color;
+  font-size: 15px;
   @extend %clearfix;
 }
 
-.social-media-list .icon svg {
+.site-footer .icon svg {
   fill: $grey-color;
-}
-
-@include media-query($on-palm) {
-  .footer-col-wrapper.row {
-    flex-wrap: wrap;
-
-    .contact, .profiles {
-      flex: 0 0 percentage(50 / 100);
-      max-width: percentage(50 / 100);
-    }
-
-    .description {
-      flex: 0 0 percentage(100 / 100);
-      max-width: percentage(100 / 100);
-    }
-  }
 }
