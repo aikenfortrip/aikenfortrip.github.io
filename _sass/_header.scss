@@ -2,10 +2,11 @@
   position: fixed;
   z-index: 100;
   top: 0;
-  width: 100%;
+  width: calc(100% - 6rem);
   height: 5.6rem;
+  padding: 0 3rem;
   border-top: 5px solid $green;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-light;
   background: hsl(0, 0%, 100%);
 }
 
@@ -19,17 +20,16 @@
   line-height: 5.6rem;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $grey-dark;
   }
 }
 
 .site-nav {
-  float: right;
   line-height: 56px;
+  float: right;
 
   .menu-icon {
     display: none;
@@ -50,7 +50,7 @@
     top: 7px;
     right: 30px;
     background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-light;
     border-radius: 5px;
     text-align: right;
 
@@ -64,7 +64,7 @@
       text-align: center;
 
       path {
-        fill: $grey-color-dark;
+        fill: $grey-dark;
       }
     }
 

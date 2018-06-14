@@ -7,98 +7,11 @@
   margin-bottom: 2.4rem;
   background-color: $green;
   color: $white;
+
   h1 {
     font-family: 'PlaylistScript', cursive;
     font-size: 6rem;
     text-align: center;
     transform: rotateZ(-15deg);
-  }
-}
-
-.page-heading.home {
-  padding: 16rem;
-  h1 {
-    margin-bottom: 4rem;
-    font-size: 8rem;
-  }
-  a {
-    display: block;
-    width: 40rem;
-    margin: 0 auto;
-    background-color: $blue;
-    color: $white;
-    font-size: 4rem;
-    text-align: center;
-    transition: box-shadow .3s, text-decoration .3s, transform .3s;
-
-    &:hover {
-      box-shadow: 6px 6px 6px $blue-dark;
-      text-decoration: none;
-      transform: scale(1.1);
-    }
-  }
-}
-
-.before-you-go, .testimonials {
-  .row:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
-
-  .row:nth-of-type(odd) .column:first-of-type {
-    margin-right: 10%;
-  }
-
-  .row:nth-of-type(even) .column:last-of-type {
-    margin-right: 10%;
-  }
-}
-
-.before-you-go {
-  .wrapper > p {
-    margin-bottom: 3rem; 
-  }
-}
-
-.contact-info {
-  p {
-    margin-bottom: 0;
-    line-height: 1.2;
-  }
-
-  div {
-    margin-bottom: 2rem;
-  }
-
-  h3 {
-    margin-bottom: 1rem;
-  }
-}
-
-.contact-form {
-  fieldset {
-    border: 0;
-  }
-
-  label {
-    display: block;
-  }
-
-  input, textarea {
-    width: calc(100% - 2rem);
-    padding: 1rem;
-  }
-
-  textarea {
-    height: 10rem;
-  }
-
-  button {
-    display: block;
-    width: 50%;
-    padding: .8rem;
-    margin: 0 auto;
-    background-color: $green;
-    color: hsl(0, 100%, 100%);
-    font-size: 1.8rem;
   }
 }

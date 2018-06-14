@@ -70,9 +70,9 @@ a {
 }
 
 blockquote {
-  border-left: 4px solid $grey-color-light;
+  border-left: 4px solid $grey-light;
   padding-left: $spacing-unit / 2;
-  color: $grey-color;
+  color: $grey;
   font-size: 18px;
   font-style: italic;
   letter-spacing: -1px;
@@ -84,7 +84,7 @@ blockquote {
 
 pre,
 code {
-  border: 1px solid $grey-color-light;
+  border: 1px solid $grey-light;
   border-radius: 3px;
   background-color: #eef;
   font-size: 15px;
@@ -136,6 +136,6 @@ pre {
   vertical-align: middle;
 
   path {
-    fill: $grey-color;
+    fill: $grey;
   }
 }

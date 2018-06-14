@@ -1,0 +1,25 @@
+.page-heading.home {
+  padding: 16rem;
+  
+  h1 {
+    margin-bottom: 4rem;
+    font-size: 8rem;
+  }
+
+  a {
+    display: block;
+    width: 40rem;
+    margin: 0 auto;
+    background-color: $blue;
+    color: $white;
+    font-size: 4rem;
+    text-align: center;
+    transition: box-shadow .3s, text-decoration .3s, transform .3s;
+
+    &:hover {
+      box-shadow: 6px 6px 6px $blue-dark;
+      text-decoration: none;
+      transform: scale(1.1);
+    }
+  }
+}

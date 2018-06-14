@@ -1,0 +1,13 @@
+.testimonials {
+  .row:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .row:nth-of-type(odd) .column:first-of-type {
+    margin-right: 10%;
+  }
+
+  .row:nth-of-type(even) .column:last-of-type {
+    margin-right: 10%;
+  }
+}
