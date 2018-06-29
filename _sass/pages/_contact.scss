@@ -11,17 +11,27 @@
 }
 
 .contact-info {
+  margin-right: 2rem;
+
   p {
     margin-bottom: 0;
     line-height: 1.2;
   }
 
-  div {
+  .tel-email, .social {
     margin-bottom: 2rem;
   }
 
   h3 {
     margin-bottom: 1rem;
+  }
+
+  .images .row {
+    margin-bottom: .5rem;
+  }
+
+  .images .column {
+    margin-right: .5rem;
   }
 }
 

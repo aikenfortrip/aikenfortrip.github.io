@@ -27,7 +27,6 @@
 
   @include media-query($on-palm) {
     .row, .row:nth-of-type(odd) {
-      flex-direction: column;
       padding: 3rem;
       margin-bottom: 0;
     }
