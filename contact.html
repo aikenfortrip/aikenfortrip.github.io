@@ -86,35 +86,7 @@ navOrder: 1
       <h2>
         Send us a Message
       </h2>
-      <form action='https://formspree.io/aikentrips@gmail.com' method='POST'>
-        <input id='form-subject' type='hidden' name='_subject' value='New submission!' />
-        <input id='form-next' type='hidden' name='_next' value='{{ site.url }}/contact-thank-you' />
-        <input id='form-gotcha' type='text' name='_gotcha' style='display:none' />
-        <fieldset class='name'>
-          <label for='form-name'>
-            Name
-          </label>
-          <input id='form-name' name='name' type='text' required />
-        </fieldset>
-        <fieldset class='email'>
-          <label for='form-email'>
-            Email
-          </label>
-          <input id='form-email' name='email' type='email' required />
-        </fieldset>
-        <fieldset class='comments'>
-          <label for='form-comments'>
-            Comments
-          </label>
-          <textarea id='form-comments' name='comments'></textarea>
-        </fieldset>
-        <button type='submit'>
-          Contact Us
-        </button>
-      </form>
-    </div>
-  </div> <!-- /contact-form -->
-
+      <form action="https://formspree.io/f/{FORM_ID}" class="fs-form" target="_top" method="POST" > <div class="fs-field"> <label class="fs-label" for="name">Your Name</label> <input class="fs-input" id="name" name="name" required /> </div> <div class="fs-field"> <label class="fs-label" for="email">Email</label> <input class="fs-input" id="email" name="email" required /> <p class="fs-description"> This will help us get started in planning your next trip. </p> </div> <div class="fs-field"> <label class="fs-label" for="message">Tell us more</label> <textarea class="fs-textarea" id="message" name="message" required ></textarea> <p class="fs-description">What would you like to discuss?</p> </div> <div class="fs-button-group"> <button class="fs-button" type="submit">Submit</button> </div> </form>
 </div>
 
 <script>
