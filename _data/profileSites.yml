@@ -4,4 +4,9 @@
     url: 'https://www.facebook.com/',
     username: 'aikenforatrip',
   },
+{
+    name: 'Instagram',
+    url: 'https://www.Instagram.com/',
+    username: 'aikenforatrip',
+  },
 ]
